@@ -30,22 +30,27 @@ python3.5 JGM_main.py --igm Test_9ch --config anneal.yml --doc your checkpoint -
 We provide pretrained checkpoints. You can download pretrained models from [Baidu Drive](https://pan.baidu.com/s/16eTJYctxh6t3mkg-fZvLdw). 
 key number is "JGM9 " 
 ## Graphical representation
+## Visualization of the colorization results with different generative modelings.
  <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/1.png" >  </div>
- Visualization of the colorization results with different generative mod-elings. (a) The reference grayscale image. (b) The top line is the colori-zation result with generative modeling in intensity domain, and the bot-tom line is with the generative modeling in joint intensity-gradient do-main. (c) The colorization result of the proposed JGM. Particularly, the generative modeling of JGM is conducted in 9-channel (intensi-ty-gradient) domain, largely reduces the color ambiguity in intensity and attains a more natural and realistic result.
+ Visualization of the colorization results with different generative modelings. (a) The reference grayscale image. (b) The top line is the colorization result with generative modeling in intensity domain, and the bottom line is with the generative modeling in joint intensity-gradient do-main. (c) The colorization result of the proposed JGM. Particularly, the generative modeling of JGM is conducted in 9-channel (intensity-gradient) domain, largely reduces the color ambiguity in intensity and attains a more natural and realistic result.
  
- 
+ ##  The visual comparison of CVAE , iGM  and JGM
  <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/2.png" >  </div>
  Visual comparison of CVAE (a), iGM (b) and JGM (c). Rather than the CVAE that optimally encode the compressible latent space to achieve the colorization goal, both iGM and JGM utilize the generative modeling in high-dimensional space to optimize the colorization target. Particularly by taking advantage of the joint intensity-gradient field, the proposed JGM learns prior information and iteratively approaches to color image.
  
+  ##   The pipeline of the prior learning stage and the iterative colorization procedure of JGM.
  <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/3.png" >  </div>
  The pipeline of the prior learning stage and the iterative colorization procedure of JGM. More specifically, the prior training stage learns the data distribution (including images domain and gradients domain) from the reference dataset, which acts as prior information for later colorization. The colorization stage generates samples from the high-dimensional noisy data distribution by annealed Langevin dynamics, under the given intensi-ty-gradient data-consistency constraint. 
  
+   ##    Visualization of the intermediate colorization process with annealed Langevin dynamics.
  <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/4.png" >  </div>
  Visualization of the intermediate colorization process with annealed Langevin dynamics. As the level of artificial noise becomes smaller, the colori-zation results tend to more natural color effects.
  
+ ##    Visual comparisons with the state-of-the-arts.
  <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/5.png">  </div>
  Visual comparisons with the state-of-the-arts.
  
+ ##    Diversified colorization.
  <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/6.png">  </div>
  Diversified colorization effects of the proposed JGM.
  

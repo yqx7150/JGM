@@ -29,7 +29,8 @@ python3 JGM_main.py --igm Test_9ch --config anneal.yml --doc your checkpoint --t
 ## Checkpoints
 We provide pretrained checkpoints. You can download pretrained models from [Baidu Drive](https://pan.baidu.com/s/1do-Y-13E7NWK2mkE9K912w). 
 key number is "JGM " 
-
+## Graphical representation
+ <div align="center"><img src="https://github.com/yqx7150/HGGDP/blob/master/hggdp_rec/sample/fig6.png" width = "400" height = "450">  </div>
 ## Train Data
 We choose three datasets for experiments, including LSUN(bedroom and church), COCO-stuff and ImageNet 
 ## Test Data

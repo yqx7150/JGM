@@ -46,7 +46,7 @@ key number is "JGM "
  <div align="center"><img src="https://https://github.com/yqx7150/JGM/blob/main/image/5.png" width = "400" height = "450">  </div>
  Visual comparisons with the state-of-the-arts.
  
- <div align="center"><img src="https://https://github.com/yqx7150/JGM/blob/main/image/5.png" width = "400" height = "450">  </div>
+ <div align="center"><img src="https://https://github.com/yqx7150/JGM/blob/main/image/6.png" width = "400" height = "450">  </div>
  Diversified colorization effects of the proposed JGM.
  
 ## Train Data

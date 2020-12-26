@@ -31,11 +31,11 @@ We provide pretrained checkpoints. You can download pretrained models from [Baid
 key number is "JGM9 " 
 ## Graphical representation
 ## Visualization of the colorization results with different generative modelings.
- <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/3.1.png" >  </div>
+ <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/1.png" >  </div>
  Visualization of the colorization results with different generative modelings. (a) The reference grayscale image. (b) The top line is the colorization result with generative modeling in intensity domain, and the bottom line is with the generative modeling in joint intensity-gradient do-main. (c) The colorization result of the proposed JGM. Particularly, the generative modeling of JGM is conducted in 9-channel (intensity-gradient) domain, largely reduces the color ambiguity in intensity and attains a more natural and realistic result.
  
  ##  The visual comparison of CVAE , iGM  and JGM
- <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/2.png" >  </div>
+ <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/3.1.png" >  </div>
  Visual comparison of CVAE (a), iGM (b) and JGM (c). Rather than the CVAE that optimally encode the compressible latent space to achieve the colorization goal, both iGM and JGM utilize the generative modeling in high-dimensional space to optimize the colorization target. Particularly by taking advantage of the joint intensity-gradient field, the proposed JGM learns prior information and iteratively approaches to color image.
  
   ##   The pipeline of the prior learning stage and the iterative colorization procedure of JGM.

@@ -40,7 +40,7 @@ key number is "JGM9 "
  
   ##   The pipeline of the prior learning stage and the iterative colorization procedure of JGM.
  <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/3.png" >  </div>
- The pipeline of the prior learning stage and the iterative colorization procedure of JGM. More specifically, the prior training stage learns the data distribution (including images domain and gradients domain) from the reference dataset, which acts as prior information for later colorization. The colorization stage generates samples from the high-dimensional noisy data distribution by annealed Langevin dynamics, under the given intensi-ty-gradient data-consistency constraint. 
+ The pipeline of the prior learning stage and the iterative colorization procedure of JGM. More specifically, the prior training stage learns the data distribution (including images domain and gradients domain) from the reference dataset, which acts as prior information for later colorization. The colorization stage generates samples from the high-dimensional noisy data distribution by annealed Langevin dynamics, under the given intensity-gradient data-consistency constraint. 
  
    ##    Visualization of the intermediate colorization process with annealed Langevin dynamics.
  <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/4.png" >  </div>
@@ -48,7 +48,7 @@ key number is "JGM9 "
  
  ##    Visual comparisons with the state-of-the-arts.
  <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/5.png">  </div>
- Visual comparisons with the state-of-the-arts.
+ Visual comparisons with the state-of-the-arts. From left to right: Grayscale, Zhang et al., MemoPainter, ChromaGAN, iGM and JGM. Our method with gradient domain and high-dimensional can predict pleasing colors visually.
  
  ##    Diversified colorization.
  <div align="center"><img src="https://github.com/yqx7150/JGM/blob/main/image/6.png">  </div>

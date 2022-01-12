@@ -116,11 +116,11 @@ def main():
     print("<" * 80)
 
     try:
-        igm = eval(args.igm)(args, config)
+        jgm = eval(args.jgm)(args, config)
         if not args.test:
-            igm.train()
+            jgm.train()
         else:
-            igm.test()
+            jgm.test()
     except:
         logging.error(traceback.format_exc())
 
